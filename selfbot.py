@@ -11,7 +11,7 @@ print ("\nWelcome to G-Operation\n")
 with open('token.json', 'r') as fp:
     connecting = json.load(fp)
 if connecting['token'] == "":
-     client = LINE()
+     client = LINE("rizqanahmadanshari@gmail.com","smashblast555")
 else:
     client=LINE(authToken=connecting['token'])
 connecting["token"] = client.authToken
